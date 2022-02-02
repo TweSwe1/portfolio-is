@@ -100,22 +100,20 @@
                     params.append('email', email);
                     params.append('message', message);
 
-                    axios.post(
-                        "https://portfolio-is-qvxk28ai7-tweswe1.vercel.app/database/server.php",
-
-
-                        params, {
-                            headers: {
-                                'content-type': 'application/x-www-form-urlencoded',
-                            }
-                        }
-                    ).then(function () {
-                        console.log('SUCCESS!!');
-                    })
-                        .catch(function () {
-                            // console.log(response.indentText)
-                            console.log('FAILURE!!');
-                        });
+                    // axios.post(
+                    //     "http://localhost:3000/server.php",
+                    //     params, {
+                    //         headers: {
+                    //             'content-type': 'application/x-www-form-urlencoded',
+                    //         }
+                    //     }
+                    // ).then(function () {
+                    //     console.log('SUCCESS!!');
+                    // })
+                    //     .catch(function () {
+                    //         // console.log(response.indentText)
+                    //         console.log('FAILURE!!');
+                    //     });
                 }
             },
 
